@@ -116,10 +116,11 @@ def main():
             plt.show()
 
     # streamlit
+    st.title("AtCoder Heuristic Contest 016のやつ")
     st.sidebar.title('データの設定')
     input_x=st.sidebar.number_input('グラフ数：',10,100,10)
-    input_y=st.sidebar.number_input('エラー率：',0,40,0)
-    input_z=st.sidebar.number_input('サンプルサイズ：',0,10000,0)
+    input_y=st.sidebar.number_input('エラー率(％)：',0,40,0)
+    input_z=st.sidebar.number_input('サンプルサイズ：',0,10000,100)
 
     ### inputs
     M = int(input_x)

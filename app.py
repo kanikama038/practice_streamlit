@@ -32,6 +32,7 @@ def main():
             if c: l[i] = '0' if l[i]=='1' else '1'
         return ''.join(l)
 
+    @st.cache
     def show_3d_graph():
         """ 3dグラフを表示. """
         from mpl_toolkits.mplot3d import Axes3D ## 明示的には使ってないけど入れないとエラー
